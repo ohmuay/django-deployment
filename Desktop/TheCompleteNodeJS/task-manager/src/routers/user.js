@@ -127,7 +127,7 @@ userRouter.post("/users/logoutAll", auth, async (req, res) => {
 const upload = multer({
   // dest:'avatar',
   limits:{
-    fileSize:100000
+    fileSize:1000000
   },
   fileFilter(req,file,cb){
     if(!file.originalname.match(/\.(jpg|jpeg|png)$/)){
